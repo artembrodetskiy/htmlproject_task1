@@ -3,50 +3,43 @@
   <head>
     <meta charset="UTF-8">
     <title>title</title>
-    
-    <style type="text/css">
-      table, th, td {
-        border: 1px solid black;
-        border-collapse: collapse;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-<!-- 
-  TODO: 
-  1. избавиться от тэга big (он устаревший - см https://developer.mozilla.org/en/docs/Web/HTML/Element/big) использовать css для определения размера шрифта.
-  2. переместить все картинки в папку img/ 
-  3. вынести стили в <head>
--->
-  <body style="background-image: url('img/pattern.png')">
-    <div style="width: 1000px;text-align:center; background-color: white; margin-left: auto; margin-right: auto; padding: 25px; border: 1px solid black;"> 
-       <h1 align="center" style="font-size: 60px; margin-top: 0;">welcome to our website </h1>
-       <p align="left"; style="margin-left: auto; margin-right: auto; text-align:center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
-        <h1 style="text-align:left">Document structure</h1>
-       <h2 style="text-align:left">The document has 2 pages, as follows:</h2>
-        <ol style="text-align:left">
+  <body>
+    <article class="container"> 
+      <header>
+        <h1 class="main-headline">welcome to our website</h1>
+        <p class="intro">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+      </header>
+      
+      <section>
+        <h1>Document structure</h1>
+        <h2>The document has 2 pages, as follows:</h2>
+        <ol>
           <li>Welcome page</li>
           <li>Lorem ipsum dolor sit amet</li>
           <li>Great!</li>
         </ol>
-        <h1 style="text-align:left;color: blue;">Red heart</h1>
-     <div align="left" style="overflow: auto; padding-bottom: 35px;">
-        <p style="text-align:left">
-          <img style="float: left; padding: 0 20px" src="img/heart.png">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </section> 
+
+      <section class="aboveimg">
+        <h1 class="nameofimg">Red heart</h1>
+        <p>
+          <img src="img/heart.png">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
         </p>
-      </div>
-      <h1 style="text-align:left;color: blue;clear: both;">Black car</h1>
-      <!-- TODO: проверить есть ли у тэга <div> аттрибут "floatc" (можно найти тут - https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div) -->
-          <div align="left" style="
-          overflow: auto;
-          padding-bottom: 35px;">
-      
-          <p>
-            <img src="img/transport.png" style="float: left; padding: 0 20px" >
-            nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-          </p>
-        </div>
-        <h1 style="text-align:left;color: blue;">build a table</h1>
-        <table style="width: 600px">
+      </section>
+
+      <section class="aboveimg">
+        <h1 class="nameofimg">Black car</h1>
+        <p>
+          <img src="img/transport.png">
+          nUt enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section> 
+
+      <section>
+        <h1 class="build-a-table">build a table</h1>
+        <table>
           <tr>
             <th>#</th>
             <th>First Name</th>
@@ -76,11 +69,12 @@
             <td>@Twitter</td> 
           </tr>
         </table>
-      </div>
-    </div>
-    <div>
-      <p align="center">(с)made by bros</p>
-    </div>
+      </section>
+    </article>
+
+    <footer class="second-container">
+      <p>(с)Made By Bros</p>
+    </footer>  
   </body>
 </html>
 
